@@ -1,0 +1,20 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <script src="wasm_exec.js"></script>
+    <script>
+        const go = new Go();
+        WebAssembly.instantiateStreaming(fetch("main.wasm"), go.importObject).then((result) => {
+            go.run(result.instance);
+        });
+    </script>
+</head>
+<body>
+<h1>WebAssembly Demo</h1>
+<input type="text" id="jsonInput">
+<button id="btn-wasm">解析(wasm)</button>
+<br />
+<textarea id="prettyJsonArea"></textarea>
+<script src="handle.js"></script>
+</body>
+</html>
