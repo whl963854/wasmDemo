@@ -1,5 +1,6 @@
 # wasmDemo
 ## Go
+```bash
 ├─compile_test              将Go编译为wasm
 │  ├─go_wasi                Go编译wasi（实验）
 │  ├─go_wasm                Go编译
@@ -11,8 +12,9 @@
     ├─Go_calls_JS           Go调用js代码
     ├─Go_DOM                Go实现DOM元素操作
     └─JS_calls_Go           js调用go函数
-
+```
 ## Rust
+```bash
 ├─hello                     将Rust编译为wasm
 ├─ImportAndExport           导入和导出函数
 |  ├─main                   main函数
@@ -22,6 +24,8 @@
 └─passingstring             字符串处理
     ├─command_line_arguments命令行参数封装与传递
     └─string                传递字符串参数
+
+```
 
 ## Go_Rust
 Go和Rust调用实例
