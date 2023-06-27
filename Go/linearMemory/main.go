@@ -9,21 +9,20 @@ var buffer [BUFFER_SIZE]uint8
 func main() {}
 
 // 函数返回指向我们在wasm内存中的缓冲区的指针（索引）
-// export getWasmMemoryBufferPointer
+//export getWasmMemoryBufferPointer
 func getWasmMemoryBufferPointer() *[BUFFER_SIZE]uint8 {
 	return &buffer
 }
 
-// 函数将传递的值存储在索引0处，
-// 在我们的缓冲区中
-// go:export storeValueInWasmMemoryBufferIndexZero
+// 函数将传递的值存储在索引0处，// 在我们的缓冲区中
+//export storeValueInWasmMemoryBufferIndexZero
 func storeValueInWasmMemoryBufferIndexZero(value uint8) {
 	buffer[0] = value
 }
 
 // 函数从我们的缓冲区的索引1处读取
 // 并返回该索引处的值
-// go:export readWasmMemoryBufferAndReturnIndexOne
+//export readWasmMemoryBufferAndReturnIndexOne
 func readWasmMemoryBufferAndReturnIndexOne() uint8 {
 	return buffer[1]
 }

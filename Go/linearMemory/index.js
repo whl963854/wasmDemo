@@ -1,6 +1,13 @@
-// 在 wasm_exec.js 中定义。别忘了在 index.html 中添加这个脚本。
+// 在 wasm_exec_tiny.js 中定义。别忘了在 index.html 中添加这个脚本。
 const go = new Go(); 
 
+async function wasmBrowserInstantiate(wasmURL, importObject) {
+    const response = await fetch(wasmURL);
+    const wasmArrayBuffer = await response.arrayBuffer();
+    const wasmModule = await WebAssembly.instantiate(wasmArrayBuffer, importObject);
+    return wasmModule;
+}
+  
 const runWasm = async () => {
     const importObject = go.importObject;
 
