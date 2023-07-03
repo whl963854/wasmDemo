@@ -1,0 +1,1 @@
+/home/longaotian/workplace/gopath/src/wasmDemo/runtime/runtimeCompare/sockets/wasmer/wasix-axum/target/debug/wasix-axum: /home/longaotian/workplace/gopath/src/wasmDemo/runtime/runtimeCompare/sockets/wasmer/wasix-axum/src/main.rs
