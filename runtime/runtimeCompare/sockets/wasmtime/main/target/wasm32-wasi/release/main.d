@@ -1,1 +1,0 @@
-/home/longaotian/workplace/gopath/src/wasmDemo/runtime/runtimeCompare/sockets/wasmtime/main/target/wasm32-wasi/release/main.wasm: /home/longaotian/workplace/gopath/src/wasmDemo/runtime/runtimeCompare/sockets/wasmtime/main/src/main.rs
